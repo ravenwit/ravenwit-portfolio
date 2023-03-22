@@ -5,8 +5,9 @@ const variables = css`
     --nav-background: rgba(3,3,36, 0.85);
     --dark-navy: #00001E;
     --navy: #030324;
-    --light-navy: #030339;
-    --lightest-navy: #1C1C48;
+    --light-navy: #05053d;
+    --lightest-navy: #050548;
+    --another-navy: #060B3E;
     --navy-shadow: #030317;
     --dark-slate: #495670;
     --slate: #95B2D8;
@@ -18,6 +19,8 @@ const variables = css`
     --highlight-second: #EDC239;
     --pink: #f57dff;
     --blue: #57cbff;
+    --expedition-blue: #428BFF;
+    --expedition-orange: #d3b65e;
     --yellow-orange: #FFB24A;
 
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,

@@ -202,8 +202,9 @@ const About = () => {
             
             <p>
             Shakir has been coding since he was 13 years old, when he discovered that computers could be used for much more than just 
-            running pre-existing programs. It started out just for fun to develop custom softwares for personal use with 
-            Microsoft visual basic 6.0 and further extended to web development, networking, and Linux server administration.
+            running pre-existing programs. His cyber expedition has started out just for fun to develop custom softwares for personal use with 
+            Microsoft Visual Basic 6.0 and further extended to networking, Linux server administration, web development and 
+            penetration testing.
             </p>
 
             <p>
