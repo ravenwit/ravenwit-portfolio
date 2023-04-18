@@ -157,6 +157,7 @@ const StyledTabPanel = styled.div`
   }
 
   .range {
+    margin-top: 10px;
     margin-bottom: 25px;
     color: var(--light-slate);
     font-family: var(--font-mono);
@@ -175,7 +176,8 @@ const Education = () => {
           node {
             frontmatter {
               title
-              company
+              degree
+              institute
               location
               range
               url
@@ -244,13 +246,13 @@ const Education = () => {
 
   return (
     <StyledEducationSection id="education" ref={revealContainer}>
-      <h2 className="numbered-heading">My educational background</h2>
+      <h2 className="numbered-heading">Academic Studies</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Education tabs" onKeyDown={e => onKeyDown(e)}>
           {educationData &&
             educationData.map(({ node }, i) => {
-              const { company } = node.frontmatter;
+              const { title } = node.frontmatter;
               return (
                 <StyledTabButton
                   key={i}
@@ -262,7 +264,7 @@ const Education = () => {
                   tabIndex={activeTabId === i ? '0' : '-1'}
                   aria-selected={activeTabId === i ? true : false}
                   aria-controls={`panel-${i}`}>
-                  <span>{company}</span>
+                  <span>{title}</span>
                 </StyledTabButton>
               );
             })}
@@ -273,7 +275,7 @@ const Education = () => {
           {educationData &&
             educationData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { degree, url, institute, range } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -285,11 +287,13 @@ const Education = () => {
                     aria-hidden={activeTabId !== i}
                     hidden={activeTabId !== i}>
                     <h3>
-                      <span>{title}</span>
+                      <span>{degree}</span>
+                    </h3>
+                    <h3>
                       <span className="company">
                         &nbsp;@&nbsp;
                         <a href={url} className="inline-link">
-                          {company}
+                          {institute}
                         </a>
                       </span>
                     </h3>

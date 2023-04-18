@@ -157,6 +157,7 @@ const StyledTabPanel = styled.div`
   }
 
   .range {
+    margin-top: 10px;
     margin-bottom: 25px;
     color: var(--light-slate);
     font-family: var(--font-mono);
@@ -175,6 +176,7 @@ const Jobs = () => {
           node {
             frontmatter {
               title
+              position
               company
               location
               range
@@ -244,13 +246,13 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">My professional experinece</h2>
+      <h2 className="numbered-heading">Professional experinece</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
           {jobsData &&
             jobsData.map(({ node }, i) => {
-              const { company } = node.frontmatter;
+              const { title } = node.frontmatter;
               return (
                 <StyledTabButton
                   key={i}
@@ -262,7 +264,7 @@ const Jobs = () => {
                   tabIndex={activeTabId === i ? '0' : '-1'}
                   aria-selected={activeTabId === i ? true : false}
                   aria-controls={`panel-${i}`}>
-                  <span>{company}</span>
+                  <span>{title}</span>
                 </StyledTabButton>
               );
             })}
@@ -273,7 +275,7 @@ const Jobs = () => {
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { position, url, company, range } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -285,7 +287,7 @@ const Jobs = () => {
                     aria-hidden={activeTabId !== i}
                     hidden={activeTabId !== i}>
                     <h3>
-                      <span>{title}</span>
+                      <span>{position}</span>
                       <span className="company">
                         &nbsp;@&nbsp;
                         <a href={url} className="inline-link">

@@ -22,7 +22,7 @@ const StyledSkillSection = styled.section`
 
 `;
 
-const StyledSkillCards = styled.div`
+const StyledSkillCardContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
@@ -303,6 +303,8 @@ const StyledSkillCard = styled.div`
 
     h3 {
       font-size: var(--fz-md);
+      margin-top: 18px;
+      align-self: center;
     }
   }
 
@@ -334,7 +336,7 @@ const Skills = () => {
   return (
     <StyledSkillSection id="skills" ref={revealContainer}>
       <h2 className="numbered-heading">Skills</h2>
-      <StyledSkillCards>
+      <StyledSkillCardContainer>
         <StyledSkillCard>
           <h3 class="title">Python</h3>
 
@@ -584,7 +586,7 @@ const Skills = () => {
           
         </StyledSkillCard>
 
-      </StyledSkillCards>
+      </StyledSkillCardContainer>
 
       <Link className="inline-link archive-link" to="/cert" ref={revealCertLink}>
         view certificates

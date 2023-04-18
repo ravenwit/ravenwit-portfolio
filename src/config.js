@@ -30,15 +30,15 @@ module.exports = {
       url: '/#about',
     },
     {
-      name: 'Skills',
+      name: 'Know-How',
       url: '/#skills',
     },
     {
-      name: 'Education',
+      name: 'Academia',
       url: '/#education',
     },
     {
-      name: 'Experience',
+      name: 'Hustles',
       url: '/#jobs',
     },
     {
@@ -46,7 +46,7 @@ module.exports = {
       url: '/#projects',
     },
     {
-      name: 'Contact',
+      name: 'Connect',
       url: '/#contact',
     },
   ],

@@ -153,7 +153,7 @@ const ArchivePage = ({ location, data }) => {
       <main>
         <header ref={revealTitle}>
           <h1 className="big-heading">Archive</h1>
-          <p className="subtitle">A big list of things I’ve worked on</p>
+          <p className="subtitle">A list of things Shakir has worked on</p>
         </header>
 
         <StyledTableContainer ref={revealTable}>
@@ -245,7 +245,10 @@ export default ArchivePage;
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/projects/" } }
+      filter: { 
+        fileAbsolutePath: { regex: "/content/projects/"} 
+        frontmatter: { showInArchive: { ne: false } }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -256,8 +259,6 @@ export const pageQuery = graphql`
             tech
             github
             external
-            ios
-            android
             company
           }
           html

@@ -242,9 +242,17 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
+            {external && (
+              <a href={external} target="_blank" rel="noreferrer">
               {title}
             </a>
+            )}
+            {!external && github && (
+              <a href={github} target="_blank" rel="noreferrer">
+              {title}
+            </a>
+            )}
+            
           </h3>
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
@@ -265,7 +273,7 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
+      <h2 ref={revealTitle}>Projects</h2>
 
       <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
         view the archive

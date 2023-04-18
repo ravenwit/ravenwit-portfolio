@@ -116,16 +116,17 @@ const StyledProject = styled.li`
   }
 
   .project-overline {
-    margin: 10px 0;
-    color: var(--highlight);
+    margin: 10px 0 30px;
+    color: var(--highlight-second);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
-    font-weight: 400;
+    font-weight: 700;
   }
 
   .project-title {
     color: var(--lightest-slate);
     font-size: clamp(24px, 5vw, 28px);
+    margin-bottom: 10px;
 
     @media (min-width: 768px) {
       margin: 0 0 20px;
@@ -159,7 +160,7 @@ const StyledProject = styled.li`
     border-radius: var(--border-radius);
     background-color: var(--light-navy);
     color: var(--light-slate);
-    font-size: var(--fz-lg);
+    font-size: var(--fz-md);
 
     @media (max-width: 768px) {
       padding: 20px 0;
@@ -349,7 +350,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
+        Research
       </h2>
 
       <StyledProjectsGrid>

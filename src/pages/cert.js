@@ -29,7 +29,7 @@ const StyledCertificateDrawer = styled.div`
   color: var(--light-slate);
   width: 100%;
   display: flex;
-  max-height: 120px;
+  max-height: 200px;
   flex-direction: row;
   border-radius: 10px;
   justify-content: space-between;
@@ -66,7 +66,8 @@ const StyledCertificateDrawer = styled.div`
 
   .org-image {
     align-self: center;
-    margin-left: 1.7rem;
+    padding-left: 1.7rem;
+    padding-top: 0;
     // padding-right: 1rem;
     transition: transform 1s ease-in-out;
 
@@ -148,7 +149,14 @@ const StyledCertificateDrawer = styled.div`
       span {
         color: var(--light-slate);
         font-weight: normal;
+      }
 
+      .cert-date-month.mobile {
+        display: none;
+      }
+
+      .cert-date-month.desktop {
+        display: block;
       }
 
     }
@@ -240,9 +248,51 @@ const StyledCertificateDrawer = styled.div`
         }
       }
     }
-
-
   }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    max-height: none;
+    width: auto;
+
+    &.expanded {
+      max-height: none;
+    }
+
+    .info {
+
+      .cert_date {
+        max-width: 200px;
+        align-self: center;
+
+        .cert-date-month.mobile {
+          display: block;
+        }
+
+        .cert-date-month.desktop {
+          display: none;
+        }
+      }
+    }
+
+    .org-image {
+      padding-top: 1.7rem;
+      padding-left: 0;
+      align-self: center;
+    }
+  }
+
+  @media (max-width: 305px) {
+    width: 90vw;
+    .cert-content {
+      .titles {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+
 
   
 
@@ -297,11 +347,12 @@ function CertificateDrawer(props) {
       <div class='info'>
         <div class='cert_date'>
           {props.date && (
-            // <span class='cert-date-month'>{monthNames[`${new Date(props.date).getMonth()}`]} </span>
-            <span class='cert-date-month'> {`${new Date(props.date).getMonth()}`}  </span>
+            <span class='cert-date-month desktop'> {`${new Date(props.date).getMonth()}`}  </span>
+          )}                   
+          {props.date && (
+            <span class='cert-date-month mobile'> {monthNames[`${new Date(props.date).getMonth()}`]}   </span>
           )}  /  
           {props.date && (
-            // <span class='cert-date-month'>{monthNames[`${new Date(props.date).getMonth()}`]} </span>
             <span class='cert-date-year'>  {`${new Date(props.date).getFullYear()}`}</span>
             
           )}

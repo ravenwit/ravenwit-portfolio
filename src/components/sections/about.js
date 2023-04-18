@@ -19,7 +19,7 @@ const StyledAboutSection = styled.section`
   }
 `;
 const StyledText = styled.div`
-  ul.skills-list {
+  ul.interest-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
     grid-gap: 0 10px;
@@ -60,7 +60,7 @@ const StyledPic = styled.div`
     border-radius: 50%;
     height: 312px;
     -webkit-tap-highlight-color: transparent;
-    transform: scale(0.7);
+    transform: scale(0.65);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 400px;
     top:4.3rem;
@@ -76,7 +76,7 @@ const StyledPic = styled.div`
   // }
 
   .container_me:hover {
-    transform: scale(0.95);
+    transform: scale(0.85);
   }
 
   .container-inner_me {
@@ -89,33 +89,33 @@ const StyledPic = styled.div`
   }
 
   .circle_me {
-    background-color: #fee7d3;
+    // background-color: #fee7d3;
     border-radius: 50%;
     cursor: pointer;
     height: 380px;
+    width: 380px;
     left: 10px;
     pointer-events: none;
     position: absolute;
     top: 210px;
-    width: 380px;
   }
   
   .img_me {
     pointer-events: none;
     position: relative;
-    transform: translateY(20px) scale(1.15);
+    transform: translateY(20px) scale(0.9);
     transform-origin: 50% bottom;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .container_me:hover .img_me {
-    transform: translateY(0) scale(1.3);
+    transform: translateY(0) scale(1.1);
   }
 
   .img1_me {
-    left: 22px;
+    left: 8px;
     top: 164px;
-    width: 340px;
+    width: 380px;
   }
 
 
@@ -184,7 +184,8 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const interests = ['AdS/CFT Correspondence', 'Gravitational Wave', 'Elliptic Curve', 'Cryptography',
+                  'Adversarial Generative Networks', 'Earlier History of Civilizations'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -197,7 +198,7 @@ const About = () => {
             Meet Shakir Ahmed aka ravenwit, a passionate physics student driven by a boundless sense of wonder 
             and curiosity about the world, from music and movies to category theory and holographic principle. 
             He is a versatile and enthusiastic learner who is always eager to explore new topics and expand his horizons, 
-            which motivates them to challenge presumptions and approach problems from several perspectives.
+            which motivates him to challenge presumptions and approach problems from several perspectives.
             </p>
             
             <p>
@@ -215,23 +216,24 @@ const About = () => {
 
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few things that he finds very fascinating-</p>
           </div>
 
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+          <ul className="interest-list">
+            {interests && interests.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
         </StyledText>
 
         <StyledPic>
           <div class="container_me">
             <div class="container-inner_me">
+              {/* <img src="../../images/background3.jpg" class="circle_me" /> */}
             <StaticImage
               className="circle_me"
               src="../../images/background3.jpg"
-              width={380}
-              height={380}
-              quality={100}
+              width={640}
+              height={640}
+              alt="Background"
             />
             <StaticImage
               className="img_me img1_me"
