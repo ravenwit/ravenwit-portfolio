@@ -34,12 +34,12 @@ const StyledCertificateDrawer = styled.div`
   border-radius: 10px;
   justify-content: space-between;
   scroll-snap-align: center none;
-  -webkit-transition: max-height 3s cubic-bezier(0.11, 0, 0.5, 0),
+  -webkit-transition: max-height 2s cubic-bezier(0.11, 0, 0.5, 0),
                       border-radius 0.2s cubic-bezier(0.6, -0.28, 0.74, 0.05),
                       box-shadow 0.2s cubic-bezier(0.6, -0.28, 0.74, 0.05),
                       transform 0.2s cubic-bezier(0.6, -0.28, 0.74, 0.05),
                       perspective 0.5s ease-in-out;
-  transition: max-height 3s cubic-bezier(0.11, 0, 0.5, 0),
+  transition: max-height 2s cubic-bezier(0.11, 0, 0.5, 0),
               border-radius 0.2s cubic-bezier(0.6, -0.28, 0.74, 0.05),
               box-shadow 0.2s cubic-bezier(0.6, -0.28, 0.74, 0.05),
               transform 0.2s cubic-bezier(0.6, -0.28, 0.74, 0.05),
@@ -179,9 +179,9 @@ const StyledCertificateDrawer = styled.div`
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8); 
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
     max-height: 1000px;
-    -webkit-transition: max-height 3s cubic-bezier(0.5, 1, 0.89, 1),
+    -webkit-transition: max-height 2s cubic-bezier(0.5, 1, 0.89, 1),
                         perspective 1s ease-in-out 0.4s;
-    transition: max-height 3s cubic-bezier(0.5, 1, 0.89, 1),
+    transition: max-height 2s cubic-bezier(0.5, 1, 0.89, 1),
                 perspective 1s ease-in-out 0.4s;
 
 

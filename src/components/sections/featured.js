@@ -116,7 +116,7 @@ const StyledProject = styled.li`
   }
 
   .project-overline {
-    margin: 10px 0 30px;
+    margin: 10px 0;
     color: var(--highlight-second);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
@@ -243,7 +243,7 @@ const StyledProject = styled.li`
 
   .project-image {
     ${({ theme }) => theme.mixins.boxShadow};
-    grid-column: 6 / -1;
+    grid-column: -1 / 7;
     grid-row: 1 / -1;
     position: relative;
     z-index: 1;
@@ -253,6 +253,12 @@ const StyledProject = styled.li`
       height: 100%;
       opacity: 0.25;
     }
+
+    // @media (max-width: 2000px) {
+    //   grid-column: 1 / -1;
+    //   height: 100%;
+    //   opacity: 0.25;
+    // }
 
     a {
       width: 100%;

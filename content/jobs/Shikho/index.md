@@ -8,8 +8,8 @@ range: 'September 2021 - December 2022'
 url: 'https://shikho.com/'
 ---
 
-- Create lesson plan that will include creative ideas and examples to help explain complex concepts.
-- Build creative and engaging lesson script.
-- Describe the required computer animation and visualization.
-- Review lesson scripts.
-- Review designs and animations of finalized lessons.
+- Developed innovative and captivating lesson plans incorporating creative ideas and examples to effectively communicate complex concepts.
+- Created engaging lesson scripts to ensure optimal learning outcomes.
+- Utilized computer animation and visualization to enhance understanding and engagement in the classroom.
+- Conducted thorough review of lesson scripts to ensure clarity and effectiveness.
+- Oversaw the design and animation process to ensure high-quality and visually appealing lessons. 

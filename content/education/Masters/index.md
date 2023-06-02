@@ -8,5 +8,6 @@ range: 'Ocotber 2022 - Present'
 url: 'https://www.gradschool.physics.uni-bonn.de/'
 ---
 
-- General Relativity / Quantum Field Theory
+- Focused on General Relativity / Quantum Field Theory
+- Machine learning in Astrophysics
 
