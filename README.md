@@ -2,7 +2,7 @@
   <img alt="Logo" src="https://raw.githubusercontent.com/ravenwit/ravenwit-portfolio/main/src/images/logo.svg" width="100" />
 </div>
 <h1 align="center">
-  <a href='www.ravenwit.me'>ravenwit.me</a>
+  <a href='http://www.ravenwit.me'>ravenwit.me</a>
 </h1>
 
 <p align="center">
