@@ -8,5 +8,5 @@ tech:
   - Canva
 company: 'Shikho'
 showInProjects: false
-showInArchive: true
+showInArchive: false
 ---

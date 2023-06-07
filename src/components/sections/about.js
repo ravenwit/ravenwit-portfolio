@@ -197,13 +197,13 @@ const About = () => {
             <p>
             Meet Shakir Ahmed aka ravenwit, a passionate physics student driven by a boundless sense of wonder 
             and curiosity about the world, from music and movies to category theory and holographic principle. 
-            He is a versatile and enthusiastic learner who is always eager to explore new topics and expand his horizons, 
-            which motivates him to challenge presumptions and approach problems from several perspectives.
+            I am a versatile and enthusiastic learner, always eager to explore new topics and expand my horizons, 
+            which motivates me to challenge presumptions and approach problems from several perspectives.
             </p>
             
             <p>
-            Shakir has been coding since he was 13 years old, when he discovered that computers could be used for much more than just 
-            running pre-existing programs. His cyber expedition has started out just for fun to develop custom softwares for personal use with 
+            I have been coding since I was 13 years old, when I discovered that computers could be used for much more than just 
+            running pre-existing programs. My cyber expedition has started out just for fun to develop custom softwares for personal use with 
             Microsoft Visual Basic 6.0 and further extended to networking, Linux server administration, web development and 
             penetration testing.
             </p>
@@ -211,12 +211,12 @@ const About = () => {
             <p>
             {/* Shakir has a demonstrated history of building simulations for research purposes in the fields of 
             electromagnetism and quantum mechanics.  */}
-            He is currently establishing expertise in data science and neural networks 
-            to complement his love of programming and passion for physics and mathematics.
+            I am currently establishing expertise in data science and neural networks 
+            to complement my love of programming and passion for physics and mathematics.
 
             </p>
 
-            <p>Here are a few things that he finds very fascinating-</p>
+            <p>Here are a few things that I find very fascinating-</p>
           </div>
 
           <ul className="interest-list">
@@ -230,9 +230,10 @@ const About = () => {
               {/* <img src="../../images/background3.jpg" class="circle_me" /> */}
             <StaticImage
               className="circle_me"
-              src="../../images/background3.jpg"
+              src="../../images/LW008.jpg"
               width={640}
               height={640}
+              quality={95}
               alt="Background"
             />
             <StaticImage
