@@ -8,6 +8,7 @@ range: 'April 2015 - November 2019'
 url: 'https://www.sust.edu/'
 ---
 
+- Electrodynamics I &amp; II
 - Quantum Mechanics I &amp; II
 - Solid State Theory I &amp; II
 - Non-linear Optics
