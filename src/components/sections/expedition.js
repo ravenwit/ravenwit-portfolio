@@ -365,6 +365,7 @@ const StyledExpeditiionText = styled.div`
     border-radius: 100px 100px 100px 100px; 
     border: 1px solid var(--navy);
     box-shadow: inset 0.5px 0.5px 2px 1px rgba(108, 93, 48, 0.64);
+    text-align: center;
   }
 `;
 
@@ -387,7 +388,7 @@ const Expedition = () => {
 
   const apps = ['Git', 'PyCharm', 'Visual Studio Code', 'MATLAB', 'Adobe Photoshop', 'Adobe Lightroom', 'MS Office Suite', 
   'MS Visual Studio', 'Qt Creator', 'gdb', 'hexdump', 'metasploit', 'aircrack-ng', 'wireshark', 'beff', 'ettercap', 'dnsspoof', 'arpspoof', 
-  'Figma', 'Arduino IDE', 'and ...'];
+  'Figma', 'Arduino IDE', 'and so forth...'];
 
   const libraries = ['scipy', 'numpy', 'scikit-learn', 'keras', 'tensorflow', 'opencv', 'sympy', 'sagemath', 'matplotlib', 'Qt Framework',
   '.NET Framework', 'Laravel', 'jQuery', 'node.js'];

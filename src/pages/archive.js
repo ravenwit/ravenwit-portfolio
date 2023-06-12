@@ -153,7 +153,7 @@ const ArchivePage = ({ location, data }) => {
       <main>
         <header ref={revealTitle}>
           <h1 className="big-heading">Archive</h1>
-          <p className="subtitle">A list of things Shakir has worked on</p>
+          <p className="subtitle">A list of stuffs I have worked on</p>
         </header>
 
         <StyledTableContainer ref={revealTable}>
