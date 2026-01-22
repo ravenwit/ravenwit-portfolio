@@ -82,5 +82,25 @@
     "husky": "^6.0.0",
     "lint-staged": "^10.1.2",
     "prettier": "^2.2.1"
+  },
+  "resolutions": {
+    "trim": "^0.0.3",
+    "cookie": "^0.7.2",
+    "glob-parent": "^5.1.2",
+    "semver": "^7.5.4",
+    "cross-spawn": "^7.0.6",
+    "debug": "^4.3.4",
+    "minimist": "^1.2.8",
+    "json5": "^2.2.3",
+    "loader-utils": "^2.0.4",
+    "recursive-readdir": "^2.2.3",
+    "ua-parser-js": "^1.0.35",
+    "got": "^11.8.5",
+    "http-cache-semantics": "^4.1.1",
+    "tmpl": "^1.0.5",
+    "minimatch": "^3.0.5",
+    "ejs": "^3.1.10",
+    "engine.io-client": "^6.4.0",
+    "socket.io-client": "^4.6.1"
   }
 }
