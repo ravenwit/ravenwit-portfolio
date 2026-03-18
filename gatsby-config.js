@@ -1,10 +1,10 @@
 const config = require('./src/config');
 
 module.exports = {
+  pathPrefix: '/mobile',
   siteMetadata: {
     title: 'Ravenwit (Shakir Ahmed)',
-    description:
-      'Shakir Ahmed aka ravenwit is an aspirant physicist and data scientist.',
+    description: 'Shakir Ahmed aka ravenwit is an aspirant physicist and data scientist.',
     siteUrl: 'https://ravenwit.me', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@shakir7733',
