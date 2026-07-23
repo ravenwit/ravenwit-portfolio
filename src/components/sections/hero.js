@@ -66,16 +66,16 @@ const Hero = () => {
     <>
 
       <p>
-      Having a profound admiration towards arts keeps me aware of design aesthetics 
-      whereas my keen interest for physics and mathematics makes me easily engaged 
-      and enthralled by challenging problems.
+        Having a profound admiration towards arts keeps me aware of design aesthetics
+        whereas my keen interest for physics and mathematics makes me easily engaged
+        and enthralled by challenging problems.
       </p>
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="./cv.pdf"
+      href="./Shakir_Ahmed_CV.pdf"
       target="_blank"
       rel="noreferrer">
       Curriculum vitae
